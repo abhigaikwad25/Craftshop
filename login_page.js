@@ -17,3 +17,20 @@ btnpopup.addEventListener('click',()=>{
 })
 
 
+function login(){
+    const rname=document.querySelector('.r_inputmail').value;
+    const rpwd=document.querySelector('.r_inputpwd').value;
+    const lname=document.querySelector('.l_inputmail').value;
+    const lpwd=document.querySelector('.l_inputpwd').value;
+
+    if(rname==lname && rpwd==lpwd){
+        alert("Login Successfull")
+        window.location.href="./landingpage.html";
+    }
+    else{
+        alert("Wrong Credential")
+    }
+}
+
+
+
